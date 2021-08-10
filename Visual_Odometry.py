@@ -75,7 +75,7 @@ def epipolar_match(matches, l_keypoints, r_keypoints, cam, y_thresh, d_thresh = 
             matches.remove(match)
         elif disparity > d_thresh + d_max:
             num_removed += 1
-            matches.remove(match) #TODO, threshold on the disparity
+            matches.remove(match) # threshold on the disparity
     
     return num_removed
                    
@@ -89,7 +89,7 @@ def forward_motion_match(matches, kps1, kps2, cam, motion_thresh):
     # number of matches removed
     num_removed = 0
 
-    #TODO complete this
+    
     for match in matches[::-1]:
         kp1 = np.array( kps1[match.queryIdx].pt )
         kp2 = np.array( kps2[match.trainIdx].pt )
