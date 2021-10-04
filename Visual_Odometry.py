@@ -249,7 +249,7 @@ outlier_threshold = 1 # threshold on error residuals for determining outliers. o
 min_num_3D_points = 1 # min number of 3D stereo points between time frames needed to calculate motion 2
 min_disparity = 1 # minimum stereo disparity to use
 
-root_pathname = "/home/avii/Downloads/KITTIVO/KITTIVO/"
+root_pathname = "/home/dhaval/Downloads/KITTIVO/KITTIVO/"
 image_folder = "images/"
 calib_folder = "calibs/"
 poses_folder = "poses/"
